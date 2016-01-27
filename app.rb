@@ -1,5 +1,7 @@
 require 'sinatra'
 
+set :bind, '0.0.0.0'
+
 configure do
   mime_type :m3u8, 'application/x-mpegURL'
 end
